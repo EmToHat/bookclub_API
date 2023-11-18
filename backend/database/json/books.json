@@ -1,0 +1,90 @@
+[
+  {
+    "title": "The London House",
+    "author": "Katherine Reay",
+    "description": "Uncovering a dark family secret sends one woman through the history of Britain's WWII spy network and glamorous 1930s Paris to saev her family's reputation",
+    "genre": "Historical Fiction",
+    "category": "Adults",
+    "pages": "368",
+    "year": "2021",
+    "createdAt": "11-15-2023",
+    "updatedAt": "11-15-2023"
+  },
+  {
+    "title": "Braiding Sweetgrass: Indigenous Wisdom, Scientific Knowledge, and the Teachings of Plants",
+    "author": "Robin Wall Kimmerer",
+    "description": "Drawing on her life as an indigenous scientist and as a woman, Kimmerer shows how other living beings offer us gifts and lessons, even if we've forgotten how to hear their voices",
+    "genre": "Non-Fiction, Autobiography",
+    "category": "Adults",
+    "pages": "408",
+    "year": "2013",
+    "createdAt": "11-15-2023",
+    "updatedAt": "11-15-2023"
+  },
+  {
+    "title": "The Midnight Library",
+    "author": "Matt Haig",
+    "description": "In a between life and death state, Nora finds herself in a large library where, as long as it stays midnight, she has the option to try out all the lives she might choose to live",
+    "genre": "Fantasy",
+    "category": "Adults",
+    "pages": "304",
+    "year": "2020",
+    "createdAt": "11-15-2023",
+    "updatedAt": "11-15-2023"
+  },
+  {
+    "title": "The Lady and the Highwayman",
+    "author": "Sarah M. Eden",
+    "description": "A Victorian Romance that pits author against author",
+    "genre": "Romance",
+    "category": "Young Adults",
+    "pages": "384",
+    "year": "2019",
+    "createdAt": "11-15-2023",
+    "updatedAt": "11-15-2023"
+  },
+  {
+    "title": "The Lion, The Witch, and the Wardrobe",
+    "author": "C. S. Lewis",
+    "description": "Four kids travel through a wardrobe to the land of Narnia and learn of their destiny to free it with the guidance of a mystical lion.",
+    "genre": "Fantasy",
+    "category": "Children",
+    "pages": "208",
+    "year": "1950",
+    "createdAt": "11-15-2023",
+    "updatedAt": "11-15-2023"
+  },
+  {
+    "title": "Cinder",
+    "author": "Marissa Meyer",
+    "description": "A futuristic sci-fi retelling of the classic Cinderlla story",
+    "genre": "Science Fiction",
+    "category": "Young Adults",
+    "pages": "400",
+    "year": "2012",
+    "createdAt": "11-15-2023",
+    "updatedAt": "11-15-2023"
+  },
+  {
+    "title": "The Hound of the Baskervilles",
+    "author": "Sir Arthur Conan Doyle",
+    "description": "Sherlock Holmes and Dr Watson investigate a suspicious death in the Devonshire moors",
+    "genre": "Mystery",
+    "category": "Young Adults",
+    "pages": "124",
+    "year": "1902",
+    "createdAt": "11-15-2023",
+    "updatedAt": "11-15-2023"
+  },
+  {
+    "title": "Under the Tulip Tree",
+    "author": "Michelle Shocklee",
+    "description": "7 years into the Great Depression, Lorena Leland accepts a position interviewing former slaves for the Federal Writers' Project",
+    "genre": "Historical Fiction",
+    "category": "Adults",
+    "pages": "400",
+    "year": "2020",
+    "createdAt": "11-15-2023",
+    "updatedAt": "11-15-2023"
+  }
+]

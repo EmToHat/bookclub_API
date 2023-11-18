@@ -1,0 +1,91 @@
+[
+  {
+    "firstName": "Amy",
+    "lastName": "Jones",
+    "email": "amy.jones@gmail.com",
+    "phoneNumber": "555-555-1234",
+    "username": "ajones",
+    "password": "p@ssw0rd",
+    "activeReader": "yes",
+    "address": {
+        "street" : "123 Main St",
+        "city": "Columbus",
+        "state": "OH",
+        "postalCode": "43004"
+    },
+    "favoriteGenres": "Historical Fiction, Fantasy",
+    "createdAt": "06-23-2022",
+    "updatedAt": "06-23-2022"
+  },
+  {
+    "firstName": "Benjamin",
+    "lastName": "King",
+    "email": "benjik@gmail.com",
+    "phoneNumber": "555-123-7894",
+    "username": "bking",
+    "password": "sup3rs3cur3",
+    "activeReader": "yes",
+    "address": {
+        "street" : "654 Oak St",
+        "city": "Buffalo",
+        "state": "NY",
+        "postalCode": "14240"
+    },
+    "favoriteGenres": "Mystery, Biography",
+    "createdAt": "07-16-2020",
+    "updatedAt": "07-16-2020"
+  },
+  {
+    "firstName": "Caroline",
+    "lastName": "Leblanc",
+    "email": "carolinel@gmail.com",
+    "phoneNumber": "555-894-7925",
+    "username": "cleblanc",
+    "password": "t0ps3cr3t?",
+    "activeReader": "yes",
+    "address": {
+        "street" : "8946 W Seventh St",
+        "city": "Columbus",
+        "state": "OH",
+        "postalCode": "43004"
+    },
+    "favoriteGenres": "Poetry, Drama, Horror",
+    "createdAt": "06-12-2021",
+    "updatedAt": "06-12-2021"
+  },
+  {
+    "firstName": "David",
+    "lastName": "Menendez",
+    "email": "davidm@gmail.com",
+    "phoneNumber": "123-852-9874",
+    "username": "dmendendez",
+    "password": "c@ntgu355th15",
+    "activeReader": "yes",
+    "address": {
+        "street" : "716 Rio Grande Drive",
+        "city": "Dallas",
+        "state": "TX",
+        "postalCode": "75001"
+    },
+    "favoriteGenres": "Short Story, Dystopian, Thriller",
+    "createdAt": "11-06-2023",
+    "updatedAt": "11-06-2023"
+  },  {
+    "firstName": "Eliza",
+    "lastName": "Nakamura",
+    "email": "elizam@gmail.com",
+    "phoneNumber": "456-852-1349",
+    "username": "enakamura",
+    "password": "b00kl0v3r72",
+    "activeReader": "yes",
+    "address": {
+        "street" : "999 Maple Street",
+        "city": "Columbus",
+        "state": "OH",
+        "postalCode": "43004"
+    },
+    "favoriteGenres": "Memoir, Graphic Novel",
+    "createdAt": "07-26-2021",
+    "updatedAt": "07-26-2021"
+  }
+]

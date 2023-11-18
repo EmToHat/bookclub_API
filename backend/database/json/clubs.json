@@ -1,0 +1,32 @@
+[
+  {
+    "clubName": "Literary Ladies",
+    "host": "Amy Jones",
+    "participants": "Caroline Leblanc, Eliza Nakamura, Amy Jones",
+    "description": "An online book club for ladies who love to read!",
+    "startDate": "11-01-2021",
+    "endDate": "",
+    "createdAt": "11-01-2021",
+    "updatedAt": "11-01-2021"
+  },
+  {
+    "clubName": "Biographical Bookworms",
+    "host": "Benjamin King",
+    "participants": "Benjamin King, Eliza Nakamura",
+    "description": "A bookclub for those who love to read biographies, autobiographies, and memoirs",
+    "startDate": "12-16-2022",
+    "endDate": "",
+    "createdAt": "12-16-2022",
+    "updatedAt": "12-16-2022"
+  },
+  {
+    "clubName": "Fiction Fanatics",
+    "host": "Carolyn Leblanc",
+    "participants": "David Menendez, Carolyn Leblanc, Amy Jones",
+    "description": "No non-fiction allowed! This club is only for those who love fiction",
+    "startDate": "01-26-2023",
+    "endDate": "",
+    "createdAt": "01-26-2023",
+    "updatedAt": "01-26-2023"
+  }
+]

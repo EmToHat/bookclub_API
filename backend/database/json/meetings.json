@@ -1,0 +1,62 @@
+[
+  {
+    "bookClub": "Literary Ladies",
+    "host": "Amy Jones",
+    "time": "7:30 pm",
+    "date": "11-14-2023",
+    "dayOfWeek": "Tuesday",
+    "location": "Columbus Public Library",
+    "typeOfMeeting": "in-person",
+    "book": "The London House",
+    "createdAt": "10-14-2023",
+    "updatedAt": "10-14-2023"
+  },
+  {
+    "bookClub": "Literary Ladies",
+    "host": "Eliza Nakamura",
+    "time": "7:30 pm",
+    "date": "12-12-2023",
+    "dayOfWeek": "Tuesday",
+    "location": "Columbus Public Library",
+    "typeOfMeeting": "in-person",
+    "book": "Braiding Sweetgrass",
+    "createdAt": "11-14-2023",
+    "updatedAt": "11-14-2023"
+  },
+  {
+    "bookClub": "Fiction Fanatics",
+    "host": "David Mendendez",
+    "time": "1:00 pm",
+    "date": "11-4-2023",
+    "dayOfWeek": "Saturday",
+    "location": "online",
+    "typeOfMeeting": "online",
+    "book": "The Midnight Library",
+    "createdAt": "10-4-2023",
+    "updatedAt": "10-4-2023"
+  },
+  {
+    "bookClub": "Fiction Fanatics",
+    "host": "Carolyn LeBlanc",
+    "time": "1:00 pm",
+    "date": "12-02-2023",
+    "dayOfWeek": "Saturday",
+    "location": "online",
+    "typeOfMeeting": "online",
+    "book": "Cinder",
+    "createdAt": "11-4-2023",
+    "updatedAt": "11-4-2023"
+  },
+  {
+    "bookClub": "Biographical Bookworms",
+    "host": "Benjamin King",
+    "time": "8:45 pm",
+    "date": "11-20-23",
+    "dayOfWeek": "Monday",
+    "location": "online",
+    "typeOfMeeting": "online",
+    "book": "Braiding Sweetgrass: Indigenous Wisdom, Scientific Knowledge, and the Teachings of Plants",
+    "createdAt": "10-20-2023",
+    "updatedAt": "10-20-2023"
+  }
+]
