@@ -1,0 +1,45 @@
+# Test Book API
+
+### Get All Books
+GET http://localhost:5000/books
+
+### Get Book by ID
+GET http://localhost:5000/books/6556d3928c097687179cf316
+
+### Get Book by Title
+GET http://localhost:5000/books/title/The%20Midnight%20Library
+
+### Get Books by Author
+GET http://localhost:5000/books/author/Katherine%20Reay
+
+### Add a New Book
+POST http://localhost:5000/books
+Content-Type: application/json
+
+{
+  "title": "New Book",
+  "author": "Author Name",
+  "description": "Book Description",
+  "genre": "Fiction",
+  "category": "Adults",
+  "pages": 300,
+  "year": 2023
+}
+
+### Update a Book by ID
+# Children", Teens, Young Adults, and Adults are the only available categories
+PUT http://localhost:5000/books/6557f93137a3e07f207cbbef
+Content-Type: application/json
+
+{
+  "title": "Updated Book Title",
+  "author": "Updated Author Name",
+  "description": "Updated Book Description",
+  "genre": "Mystery",
+  "category": "Teens",
+  "pages": 350,
+  "year": 2022
+}
+
+### Delete a Book by ID
+DELETE http://localhost:5000/books/6557f93137a3e07f207cbbef

@@ -1,0 +1,36 @@
+# Test Club API
+
+### Get All Clubs
+GET http://localhost:5000/clubs
+
+### Get Club by ID
+GET http://localhost:5000/clubs/6556e6789146d56fa5a82d56
+
+### Add a New Club
+POST http://localhost:5000/clubs
+Content-Type: application/json
+
+{
+  "clubName": "Your Club Name",
+  "host": "Host Name",
+  "participants": ["Participant1", "Participant2"],
+  "description": "Club Description",
+  "startDate": "2023-01-01",
+  "endDate": "2023-12-31"
+}
+
+### Update a Club by ID
+PUT http://localhost:5000/clubs/655837d15dcc514ba8f1dacf
+Content-Type: application/json
+
+{
+  "clubName": "Updated Club Name to be deleted",
+  "host": "Updated Host Name",
+  "participants": ["Updated Participant1", "Updated Participant2"],
+  "description": "Updated Club Description",
+  "startDate": "2023-02-01",
+  "endDate": "2023-12-01"
+}
+
+### Delete a Club by ID
+DELETE http://localhost:5000/clubs/655837d15dcc514ba8f1dacf
