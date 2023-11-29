@@ -1,19 +1,33 @@
 {
-  "swagger": "2.0",
+  "openapi": "3.0.0",
   "info": {
     "title": "Bookclub API",
     "description": "Web Services Team 2 - Alisson Inacio, Emilee Hatch, & Anna Varner",
     "version": "1.0.0"
   },
-  "host": "localhost:5000",
-  "basePath": "/",
-  "schemes": [
-    "http"
+  "tags": [
+    {
+      "name": "Books",
+      "description": "Operations related to managing books"
+    },
+    {
+      "name": "Clubs",
+      "description": "Operations related to managing clubs"
+    },
+    {
+      "name": "Meetings",
+      "description": "Operations related to managing meetings"
+    },
+    {
+      "name": "Members",
+      "description": "Operations related to managing members"
+    }
   ],
   "paths": {
     "/books/": {
       "get": {
-        "description": "",
+        "summary": "Get a list of books",
+        "tags": ["Books"],
         "responses": {
           "200": {
             "description": "OK"
@@ -24,7 +38,8 @@
         }
       },
       "post": {
-        "description": "",
+        "summary": "Create a new book",
+        "tags": ["Books"],
         "responses": {
           "201": {
             "description": "Created"
@@ -37,16 +52,16 @@
     },
     "/books/{id}": {
       "get": {
-        "description": "",
-        "produces": [
-          "application/json"
-        ],
+        "summary": "Get details of a book by ID",
+        "tags": ["Books"],
         "parameters": [
           {
             "name": "id",
             "in": "path",
             "required": true,
-            "type": "string"
+            "schema": {
+              "type": "string"
+            }
           }
         ],
         "responses": {
@@ -62,13 +77,16 @@
         }
       },
       "put": {
-        "description": "",
+        "summary": "Update details of a book by ID",
+        "tags": ["Books"],
         "parameters": [
           {
             "name": "id",
             "in": "path",
             "required": true,
-            "type": "string"
+            "schema": {
+              "type": "string"
+            }
           }
         ],
         "responses": {
@@ -84,13 +102,16 @@
         }
       },
       "delete": {
-        "description": "",
+        "summary": "Delete a book by ID",
+        "tags": ["Books"],
         "parameters": [
           {
             "name": "id",
             "in": "path",
             "required": true,
-            "type": "string"
+            "schema": {
+              "type": "string"
+            }
           }
         ],
         "responses": {
@@ -108,16 +129,16 @@
     },
     "/books/title/{title}": {
       "get": {
-        "description": "",
-        "produces": [
-          "application/json"
-        ],
+        "summary": "Get details of a book by title",
+        "tags": ["Books"],
         "parameters": [
           {
             "name": "title",
             "in": "path",
             "required": true,
-            "type": "string"
+            "schema": {
+              "type": "string"
+            }
           }
         ],
         "responses": {
@@ -135,16 +156,16 @@
     },
     "/books/author/{author}": {
       "get": {
-        "description": "",
-        "produces": [
-          "application/json"
-        ],
+        "summary": "Get details of a book by author",
+        "tags": ["Books"],
         "parameters": [
           {
             "name": "author",
             "in": "path",
             "required": true,
-            "type": "string"
+            "schema": {
+              "type": "string"
+            }
           }
         ],
         "responses": {
@@ -162,7 +183,8 @@
     },
     "/clubs/": {
       "get": {
-        "description": "",
+        "summary": "Get a list of clubs",
+        "tags": ["Clubs"],
         "responses": {
           "default": {
             "description": ""
@@ -170,7 +192,8 @@
         }
       },
       "post": {
-        "description": "",
+        "summary": "Create a new club",
+        "tags": ["Clubs"],
         "responses": {
           "default": {
             "description": ""
@@ -180,13 +203,16 @@
     },
     "/clubs/{id}": {
       "get": {
-        "description": "",
+        "summary": "Get details of a club by ID",
+        "tags": ["Clubs"],
         "parameters": [
           {
             "name": "id",
             "in": "path",
             "required": true,
-            "type": "string"
+            "schema": {
+              "type": "string"
+            }
           }
         ],
         "responses": {
@@ -196,13 +222,16 @@
         }
       },
       "put": {
-        "description": "",
+        "summary": "Update details of a club by ID",
+        "tags": ["Clubs"],
         "parameters": [
           {
             "name": "id",
             "in": "path",
             "required": true,
-            "type": "string"
+            "schema": {
+              "type": "string"
+            }
           }
         ],
         "responses": {
@@ -212,13 +241,16 @@
         }
       },
       "delete": {
-        "description": "",
+        "summary": "Delete a club by ID",
+        "tags": ["Clubs"],
         "parameters": [
           {
             "name": "id",
             "in": "path",
             "required": true,
-            "type": "string"
+            "schema": {
+              "type": "string"
+            }
           }
         ],
         "responses": {
@@ -230,7 +262,8 @@
     },
     "/meetings/": {
       "get": {
-        "description": "",
+        "summary": "Get a list of meetings",
+        "tags": ["Meetings"],
         "responses": {
           "200": {
             "description": "OK"
@@ -241,42 +274,24 @@
         }
       },
       "post": {
-        "description": "",
-        "parameters": [
-          {
-            "name": "body",
-            "in": "body",
-            "schema": {
-              "type": "object",
-              "properties": {
-                "bookClub": {
-                  "example": "any"
-                },
-                "host": {
-                  "example": "any"
-                },
-                "time": {
-                  "example": "any"
-                },
-                "date": {
-                  "example": "any"
-                },
-                "dayOfWeek": {
-                  "example": "any"
-                },
-                "location": {
-                  "example": "any"
-                },
-                "typeOfMeeting": {
-                  "example": "any"
-                },
-                "book": {
-                  "example": "any"
-                }
+        "summary": "Create a new meeting",
+        "tags": ["Meetings"],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "example": {
+                "bookClub": "any",
+                "host": "any",
+                "time": "any",
+                "date": "any",
+                "dayOfWeek": "any",
+                "location": "any",
+                "typeOfMeeting": "any",
+                "book": "any"
               }
             }
           }
-        ],
+        },
         "responses": {
           "201": {
             "description": "Created"
@@ -289,13 +304,16 @@
     },
     "/meetings/{id}": {
       "get": {
-        "description": "",
+        "summary": "Get details of a meeting by ID",
+        "tags": ["Meetings"],
         "parameters": [
           {
             "name": "id",
             "in": "path",
             "required": true,
-            "type": "string"
+            "schema": {
+              "type": "string"
+            }
           }
         ],
         "responses": {
@@ -311,13 +329,16 @@
         }
       },
       "put": {
-        "description": "",
+        "summary": "Update details of a meeting by ID",
+        "tags": ["Meetings"],
         "parameters": [
           {
             "name": "id",
             "in": "path",
             "required": true,
-            "type": "string"
+            "schema": {
+              "type": "string"
+            }
           }
         ],
         "responses": {
@@ -336,13 +357,16 @@
         }
       },
       "delete": {
-        "description": "",
+        "summary": "Delete a meeting by ID",
+        "tags": ["Meetings"],
         "parameters": [
           {
             "name": "id",
             "in": "path",
             "required": true,
-            "type": "string"
+            "schema": {
+              "type": "string"
+            }
           }
         ],
         "responses": {
@@ -363,7 +387,8 @@
     },
     "/members/": {
       "get": {
-        "description": "",
+        "summary": "Get a list of members",
+        "tags": ["Members"],
         "responses": {
           "200": {
             "description": "OK"
@@ -374,7 +399,8 @@
         }
       },
       "post": {
-        "description": "",
+        "summary": "Create a new member",
+        "tags": ["Members"],
         "responses": {
           "201": {
             "description": "Created"
@@ -387,13 +413,16 @@
     },
     "/members/{id}": {
       "get": {
-        "description": "",
+        "summary": "Get details of a member by ID",
+        "tags": ["Members"],
         "parameters": [
           {
             "name": "id",
             "in": "path",
             "required": true,
-            "type": "string"
+            "schema": {
+              "type": "string"
+            }
           }
         ],
         "responses": {
@@ -409,13 +438,16 @@
         }
       },
       "put": {
-        "description": "",
+        "summary": "Update details of a member by ID",
+        "tags": ["Members"],
         "parameters": [
           {
             "name": "id",
             "in": "path",
             "required": true,
-            "type": "string"
+            "schema": {
+              "type": "string"
+            }
           }
         ],
         "responses": {
@@ -434,13 +466,16 @@
         }
       },
       "delete": {
-        "description": "",
+        "summary": "Delete a member by ID",
+        "tags": ["Members"],
         "parameters": [
           {
             "name": "id",
             "in": "path",
             "required": true,
-            "type": "string"
+            "schema": {
+              "type": "string"
+            }
           }
         ],
         "responses": {
@@ -461,3 +496,5 @@
     }
   }
 }
+
+

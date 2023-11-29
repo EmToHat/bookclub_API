@@ -6,6 +6,9 @@ const clubsRoute = require("./clubs");
 const meetingsRoute = require("./meetings");
 const membersRoute = require("./members");
 
+const baseController = require("../controllers/index");
+router.get("/", baseController.greeting);
+
 const swagger = require("./swagger");
 
 router.use("/books", booksRoute);
@@ -17,5 +20,6 @@ router.use("/meetings", meetingsRoute);
 router.use("/members", membersRoute);
 
 router.use("/", swagger);
+
 
 module.exports = router;
