@@ -1,0 +1,45 @@
+# Test Book API
+
+### Get All Books
+GET https://team-project-2023.onrender.com/books
+
+### Get Book by ID
+GET https://team-project-2023.onrender.com/books/6556d3928c097687179cf316
+
+### Get Book by Title
+GET https://team-project-2023.onrender.com/books/title/The%20Midnight%20Library
+
+### Get Books by Author
+GET https://team-project-2023.onrender.com/books/author/Katherine%20Reay
+
+### Add a New Book
+POST https://team-project-2023.onrender.com/books
+Content-Type: application/json
+
+{
+  "title": "New Book",
+  "author": "Author Name",
+  "description": "Book Description",
+  "genre": "Fiction",
+  "category": "Adults",
+  "pages": 300,
+  "year": 2023
+}
+
+### Update a Book by ID
+# Children", Teens, Young Adults, and Adults are the only available categories
+PUT https://team-project-2023.onrender.com/books/6557f93137a3e07f207cbbef
+Content-Type: application/json
+
+{
+  "title": "Updated Book Title",
+  "author": "Updated Author Name",
+  "description": "Updated Book Description",
+  "genre": "Mystery",
+  "category": "Teens",
+  "pages": 350,
+  "year": 2022
+}
+
+### Delete a Book by ID
+DELETE https://team-project-2023.onrender.com/books/6557f93137a3e07f207cbbef

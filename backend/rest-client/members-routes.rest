@@ -1,0 +1,38 @@
+### GET All members
+GET http://localhost:5000/members
+
+### GET Member by ID
+GET http://localhost:5000/members/6556e7ea9146d56fa5a82d5c
+
+### POST Create Member
+POST http://localhost:5000/members
+Content-Type: application/json
+
+{
+  "firstName": "John",
+  "lastName": "Doe",
+  "email": "john.doe@example.com",
+  "phoneNumber": "123-456-7890",
+  "username": "johndoe",
+  "password": "securepassword",
+  "activeReader": "yes",
+  "address": {
+    "street": "123 Main St",
+    "city": "Cityville",
+    "state": "CA",
+    "postalCode": "12345"
+  },
+  "favoriteGenres": ["Science Fiction", "Mystery"]
+}
+
+### PUT Update Member by ID
+PUT http://localhost:5000/members/INSERT_MEMBER_ID_HERE
+Content-Type: application/json
+
+{
+  "firstName": "Updated John",
+  "lastName": "Updated Doe"
+}
+
+### DELETE Member by ID
+DELETE http://localhost:5000/members/INSERT_MEMBER_ID_HERE

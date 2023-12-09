@@ -1,0 +1,36 @@
+# Test Club API
+
+### Get All Clubs
+GET https://team-project-2023.onrender.com/clubs
+
+### Get Club by ID
+GET https://team-project-2023.onrender.com/clubs/6556e6789146d56fa5a82d56
+
+### Add a New Club
+POST https://team-project-2023.onrender.com/clubs
+Content-Type: application/json
+
+{
+  "clubName": "Your Club Name",
+  "host": "Host Name",
+  "participants": ["Participant1", "Participant2"],
+  "description": "Club Description",
+  "startDate": "2023-01-01",
+  "endDate": "2023-12-31"
+}
+
+### Update a Club by ID
+PUT https://team-project-2023.onrender.com/clubs/655837d15dcc514ba8f1dacf
+Content-Type: application/json
+
+{
+  "clubName": "Updated Club Name to be deleted",
+  "host": "Updated Host Name",
+  "participants": ["Updated Participant1", "Updated Participant2"],
+  "description": "Updated Club Description",
+  "startDate": "2023-02-01",
+  "endDate": "2023-12-01"
+}
+
+### Delete a Club by ID
+DELETE https://team-project-2023.onrender.com/clubs/655837d15dcc514ba8f1dacf
